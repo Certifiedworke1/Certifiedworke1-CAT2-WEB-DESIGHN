@@ -1,1 +1,59 @@
+ def calculate_net_pay(basic_pay, tax_rate):
+  """
+  This function calculates the net pay based on basic pay and tax rate.
 
+  Args:
+      basic_pay (float): The employee's basic pay.
+      tax_rate (float): The tax rate (e.g., 0.1 for 10% tax).
+
+  Returns:
+      float: The employee's net pay after tax deduction.
+  """
+
+  # Calculate tax amount
+  tax_amount = basic_pay * tax_rate
+
+  # Calculate net pay
+  net_pay = basic_pay - tax_amount
+
+  return net_pay
+
+# Example usage
+basic_pay = 15000
+tax_rate = 0.1  # 10% tax rate
+
+net_pay = calculate_net_pay(basic_pay, tax_rate)
+
+print("Basic Pay:", basic_pay)
+print("Tax Rate:", tax_rate)
+print("Net Pay:", net_pay)
+[19/03, 15:53] Wesliey: <!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css"> </head>
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <form action="process_form.php" method="post">  <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <br>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+      <br>
+
+      <label for="password">Set Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password">
+      <br>
+
+      <br>
+      <input type="submit" value="REGISTER">
+    </form>
+  </div>
+</body>
+</html>
