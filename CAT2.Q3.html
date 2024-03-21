@@ -1,8 +1,8 @@
  let employeeName = prompt("Enter employee name:");
 let hoursWorked = parseFloat(prompt("Enter hours worked this week:"));
 let ratePerHour = parseFloat(prompt("Enter hourly pay rate:"));
-[19/03, 15:24] Wesliey: let basicPay = hoursWorked * ratePerHour;
-[19/03, 15:24] Wesliey: let bonus;
+let basicPay = hoursWorked * ratePerHour;
+let bonus;
 if (basicPay <= 20000) {
   bonus = 0;
 } else if (basicPay <= 50000) {
@@ -10,8 +10,8 @@ if (basicPay <= 20000) {
 } else {
   bonus = basicPay * 0.2; // 20% bonus
 }
-[19/03, 15:36] Wesliey: let netPay = basicPay + bonus;
-[19/03, 15:40] Wesliey: def calculate_net_pay(basic_pay, tax_rate):
+let netPay = basicPay 
+ def calculate_net_pay(basic_pay, tax_rate):
   """
   This function calculates the net pay based on basic pay and tax rate.
 
